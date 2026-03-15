@@ -17,27 +17,27 @@ Sensitive Document
  ┌─ PSEUDONYMIZE ───────────────────────────────────────┐
  │  "John Harrison" → "Casey Liu"                       │
  │  "ToyMakers Inc." → "Apex Dynamics"                  │
- │  "$42M" → "$44.1M"  (scaled 0.7x–1.3x)              │
+ │  "$42M" → "$44.1M"  (scaled 0.7x–1.3x)               │
  │  "rtorres@toymakers.com" → "user714@example.com"     │
- │                                                       │
- │  Two-pass marker replacement prevents collisions.     │
- │  Mapping stored for later reversal.                   │
- └───────────────────────────────────────────────────────┘
+ │                                                      │
+ │  Two-pass marker replacement prevents collisions.    │
+ │  Mapping stored for later reversal.                  │
+ └──────────────────────────────────────────────────────┘
        │
        ▼
  ┌─ LLM ────────────────────────────────────────────────┐
- │  Claude receives sanitized text only.                 │
- │  It analyzes "Apex Dynamics" — never sees the real    │
- │  company, names, or financials.                       │
- └───────────────────────────────────────────────────────┘
+ │  Claude receives sanitized text only.                │
+ │  It analyzes "Apex Dynamics" — never sees the real   │
+ │  company, names, or financials.                      │
+ └──────────────────────────────────────────────────────┘
        │
        ▼
  ┌─ DE-ANONYMIZE ───────────────────────────────────────┐
- │  Reverse the mapping in Claude's response:            │
+ │  Reverse the mapping in Claude's response:           │
  │  "Casey Liu" → "John Harrison"                       │
  │  "Apex Dynamics" → "ToyMakers Inc."                  │
  │  "$44.1M" → "$42M"                                   │
- └───────────────────────────────────────────────────────┘
+ └──────────────────────────────────────────────────────┘
        │
        ▼
   Final Report
