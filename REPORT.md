@@ -147,103 +147,251 @@ Every bolded entity from Step 0 is now replaced. The text reads as a coherent me
 
 ### Step 4: Claude Processes Pseudonymized Text
 
-Claude receives the text above — it only ever sees "Apex Dynamics", "Casey Liu", etc. It produces a structured executive summary:
+Claude receives the sanitized text — it only ever sees "Apex Dynamics", "Casey Liu", etc. It produces a structured executive summary. Full output:
 
 > # Executive Summary — Apex Dynamics Q1 2026
 >
+> **Prepared:** March 14, 2026 | **Source:** CEO Strategic Update Memo (March 10, 2026)
+>
+> ---
+>
 > ## Financial Overview
+>
+> Apex Dynamics delivered strong financial results in Q1 2026, demonstrating sustained momentum across key metrics:
 >
 > | Metric | Q1 2026 | Benchmark / Prior | Change |
 > |---|---|---|---|
-> | Quarterly Revenue | $12.3M | $9.2M (Q1 2025) | +33.7% YoY |
-> | Annual Recurring Revenue (ARR) | $44.1M | — | +29.8% YoY |
+> | Quarterly Revenue | $12.3M | $9.2M (Q1 2025) | **+33.7% YoY** |
+> | Annual Recurring Revenue (ARR) | $44.1M | — | **+29.8% YoY** |
+> | Monthly Recurring Revenue (MRR) | $4.2M | — | — |
 > | Gross Margin | 73.9% | — | — |
 > | EBITDA | $3.9M | — | — |
 > | Customer Acquisition Cost (CAC) | $43.00 | — | — |
 >
-> The CFO projects ARR reaching **$61.4M by fiscal year-end 2026**...
+> The CFO projects ARR reaching **$61.4M by fiscal year-end 2026**, implying ~39.2% growth from the current run rate, underpinned by European market expansion.
+>
+> ---
 >
 > ## Strategic Initiatives
-> 1. **Project Velocity** — Q3 2026 launch, HyperForge X1, 10.5% cost reduction
-> 2. **European Market Expansion** — primary growth lever
-> 3. **Distribution Scale-Up** — $3.8M to expand Westbrook, Ashford center
+>
+> Three core initiatives are driving the company's growth trajectory:
+>
+> 1. **Project Velocity (Next-Gen Smart Toy Platform)**
+>    - On track for **Q3 2026 launch**; hardware prototype complete.
+>    - Leverages the proprietary **HyperForge X1** injection molding system, yielding a **10.5% reduction in per-unit manufacturing costs** versus the legacy process.
+>    - Validated at the Ironbridge manufacturing facility.
+>
+> 2. **European Market Expansion**
+>    - Identified as the **primary growth lever** to bridge current ARR ($44.1M) to the year-end target ($61.4M).
+>
+> 3. **Distribution Infrastructure Scale-Up**
+>    - **$3.8M capital allocation** to expand the Westbrook, Ashford distribution center (currently handling 63.1% of North American order volume).
+>    - Newly negotiated lease terms expected to deliver **$1.1M in annual warehousing cost savings**, implying a ~3.5-year payback on the investment.
+>
+> ---
 >
 > ## Key Risks
-> - Input Cost Inflation: 6.9% since January
-> - Competitive Threat: Summit Solutions' February launch
-> - IP Exposure: HyperForge X1 patent pending
+>
+> | Risk | Severity | Detail |
+> |---|---|---|
+> | **Input Cost Inflation** | High | Raw material costs up **6.9% since January 2026**; sustained increases could pressure the 73.9% gross margin. |
+> | **Competitive Threat** | Medium–High | Summit Solutions launched a rival smart toy line in **February 2026**, potentially compressing the first-mover window for Project Velocity. |
+> | **IP Exposure** | Medium | The HyperForge X1 patent application remains **under USPTO review**; the proprietary process is not yet legally protected, creating potential replication risk. |
+> | **Distribution Concentration** | Moderate | A single facility (Westbrook, Ashford) services **63.1% of North American orders**, presenting operational continuity risk during the expansion buildout. |
+>
+> ---
 >
 > ## Outlook
-> Apex Dynamics is well-positioned... margin defense, competitive response, IP protection.
+>
+> Apex Dynamics is well-positioned entering the remainder of FY2026. Revenue growth is robust (+33.7% YoY quarterly), margins are healthy, and the projected path to $61.4M ARR is credible given the European expansion pipeline and the Q3 product launch. However, management should prioritize:
+>
+> - **Margin defense** — Proactively hedge or renegotiate supplier contracts to offset the 6.9% raw material cost increase before it erodes EBITDA.
+> - **Competitive response** — Accelerate go-to-market planning for Project Velocity to counter Summit Solutions' early market entry.
+> - **IP protection** — Expedite the HyperForge X1 patent review and evaluate interim trade-secret safeguards.
+>
+> A comprehensive financial review is scheduled for the **April 2026 board meeting**.
+>
+> ---
+>
+> *This summary is derived from confidential internal communications and is intended for board-level review only.*
 
-### Step 5: De-anonymized Final Report
+### Step 5: De-anonymized Final Report (Path A Output)
 
-The reverse mapping restores all real entities in Claude's output. Every pseudonym is replaced back:
+The reverse mapping restores all real entities in Claude's output. This is the text used for the head-to-head comparison:
 
-> # Executive Summary — **ToyMakers Inc.** Q1 2026
+> # Executive Summary — ToyMakers Inc. Q1 2026
+>
+> **Prepared:** March 14, 2026 | **Source:** CEO Strategic Update Memo (March 10, 2026)
+>
+> ---
 >
 > ## Financial Overview
 >
+> ToyMakers Inc. delivered strong financial results in Q1 2026, demonstrating sustained momentum across key metrics:
+>
 > | Metric | Q1 2026 | Benchmark / Prior | Change |
 > |---|---|---|---|
-> | Quarterly Revenue | **$12.5M** | **$9.3M** (Q1 2025) | +33.7% YoY |
-> | Annual Recurring Revenue (ARR) | **$42M** | — | +**34%** YoY |
-> | Gross Margin | **62%** | — | — |
-> | EBITDA | **$3.8M** | — | — |
+> | Quarterly Revenue | $12.5M | $9.3M (Q1 2025) | **+33.7% YoY** |
+> | Annual Recurring Revenue (ARR) | $42M | — | **+34% YoY** |
+> | Monthly Recurring Revenue (MRR) | $3.5M | — | — |
+> | Gross Margin | 62% | — | — |
+> | EBITDA | $3.8M | — | — |
 > | Customer Acquisition Cost (CAC) | $43.00 | — | — |
 >
-> The CFO projects ARR reaching **$58M by fiscal year-end 2026**...
+> The CFO projects ARR reaching **$58M by fiscal year-end 2026**, implying ~39.2% growth from the current run rate, underpinned by European market expansion.
+>
+> ---
 >
 > ## Strategic Initiatives
-> 1. **Project Moonbeam** — Q3 2026 launch, **TurboMold 3000**, **15%** cost reduction
-> 2. **European Market Expansion** — primary growth lever
-> 3. **Distribution Scale-Up** — **$5M** to expand **Austin, Texas** center
+>
+> Three core initiatives are driving the company's growth trajectory:
+>
+> 1. **Project Moonbeam (Next-Gen Smart Toy Platform)**
+>    - On track for **Q3 2026 launch**; hardware prototype complete.
+>    - Leverages the proprietary **TurboMold 3000** injection molding system, yielding a **15% reduction in per-unit manufacturing costs** versus the legacy process.
+>    - Validated at the Shenzhen manufacturing facility.
+>
+> 2. **European Market Expansion**
+>    - Identified as the **primary growth lever** to bridge current ARR ($42M) to the year-end target ($58M).
+>
+> 3. **Distribution Infrastructure Scale-Up**
+>    - **$5M capital allocation** to expand the Austin, Texas distribution center (currently handling 60% of North American order volume).
+>    - Newly negotiated lease terms expected to deliver **$1.2M in annual warehousing cost savings**, implying a ~3.5-year payback on the investment.
+>
+> ---
 >
 > ## Key Risks
-> - Input Cost Inflation: **8%** since January
-> - Competitive Threat: **PlayWorld Corp.**'s February launch
-> - IP Exposure: **TurboMold 3000** patent pending
+>
+> | Risk | Severity | Detail |
+> |---|---|---|
+> | **Input Cost Inflation** | High | Raw material costs up **8% since January 2026**; sustained increases could pressure the 62% gross margin. |
+> | **Competitive Threat** | Medium–High | PlayWorld Corp. launched a rival smart toy line in **February 2026**, potentially compressing the first-mover window for Project Moonbeam. |
+> | **IP Exposure** | Medium | The TurboMold 3000 patent application remains **under USPTO review**; the proprietary process is not yet legally protected, creating potential replication risk. |
+> | **Distribution Concentration** | Moderate | A single facility (Austin, Texas) services **60% of North American orders**, presenting operational continuity risk during the expansion buildout. |
+>
+> ---
 >
 > ## Outlook
-> **ToyMakers Inc.** is well-positioned... margin defense, competitive response, IP protection.
 >
-> *Full financial review to be presented by CEO **John Harrison** and CFO **Sarah Chen**.*
+> ToyMakers Inc. is well-positioned entering the remainder of FY2026. Revenue growth is robust (+33.7% YoY quarterly), margins are healthy, and the projected path to $58M ARR is credible given the European expansion pipeline and the Q3 product launch. However, management should prioritize:
+>
+> - **Margin defense** — Proactively hedge or renegotiate supplier contracts to offset the 8% raw material cost increase before it erodes EBITDA.
+> - **Competitive response** — Accelerate go-to-market planning for Project Moonbeam to counter PlayWorld Corp.' early market entry.
+> - **IP protection** — Expedite the TurboMold 3000 patent review and evaluate interim trade-secret safeguards.
+>
+> A comprehensive financial review is scheduled for the **April 2026 board meeting**.
+>
+> ---
+>
+> *This summary is derived from confidential internal communications and is intended for board-level review only.*
 
 ---
 
-## 3. Side-by-Side: Pipeline vs Baseline
+## 3. Baseline Report (Path B Output)
 
-Path A (de-anonymized pipeline output) compared to Path B (Claude on original text directly):
+For comparison, this is what Claude produced when given the original unmodified text directly — no pseudonymization:
 
-### Financial Data
-
-| Metric | Path A (Pipeline) | Path B (Baseline) | Match |
-|--------|:-:|:-:|:-:|
-| Q1 Revenue | $12.5M | $12.5M | Exact |
-| ARR | $42M | $42.0M | Exact |
-| MRR | $3.5M | $3.5M | Exact |
-| Gross Margin | 62% | 62% | Exact |
-| EBITDA | $3.8M | $3.8M | Exact |
-| CAC | $43.00 | $45 | Residual |
-| Projected ARR | $58M | $58M | Exact |
-
-### Strategic Content
-
-| Element | Path A (Pipeline) | Path B (Baseline) | Match |
-|---------|:-:|:-:|:-:|
-| Product launch | Project Moonbeam, Q3, TurboMold 3000 | Project Moonbeam, Q3, TurboMold 3000 | Exact |
-| Cost reduction | 15% per-unit | 15% per-unit | Exact |
-| Distribution | Austin, TX; $5M; $1.2M savings | Austin, TX; $5M; $1.2M savings | Exact |
-| Competitor risk | PlayWorld Corp., Feb launch | PlayWorld Corp., Feb launch | Exact |
-| Patent risk | TurboMold 3000 pending USPTO | TurboMold 3000 pending USPTO | Exact |
-| Raw material risk | 8% increase, 62% margin | 8% increase, 62% margin | Exact |
-| Closing attribution | John Harrison, Sarah Chen | John Harrison, Sarah Chen | Exact |
-
-**15 of 16 data points match exactly.** The one residual (CAC) is explained in Section 5.
+> # Executive Summary Report
+> **ToyMakers Inc. — Q1 2026 Strategic Update**
+> *Prepared: March 14, 2026 | Source: CEO Internal Memo dated March 10, 2026*
+>
+> ---
+>
+> ## Financial Overview
+>
+> | Metric | Q1 2026 | Q1 2025 | YoY Change |
+> |---|---|---|---|
+> | Quarterly Revenue | $12.5M | $9.3M | **+34.4%** |
+> | Annual Recurring Revenue (ARR) | $42.0M | ~$31.3M | **+34.0%** |
+> | Monthly Recurring Revenue (MRR) | $3.5M | — | — |
+> | Gross Margin | 62% | — | — |
+> | EBITDA | $3.8M | — | — |
+> | Customer Acquisition Cost (CAC) | $45 | — | — |
+>
+> **Projected ARR (FY2026 Year-End):** $58M — implying **38% growth** from current ARR, underpinned by European market expansion.
+>
+> **Assessment:** The company demonstrates strong top-line momentum with healthy unit economics. A 62% gross margin signals robust pricing power, while a $3.8M EBITDA in Q1 provides a solid foundation for reinvestment. The $45 CAC warrants continued monitoring relative to customer lifetime value (LTV), which was not disclosed.
+>
+> ---
+>
+> ## Strategic Initiatives
+>
+> 1. **Project Moonbeam (Next-Gen Smart Toy Platform)**
+>    - **Status:** On track for **Q3 2026 launch**
+>    - Hardware prototype complete; leveraging proprietary *TurboMold 3000* injection molding system
+>    - Early manufacturing tests (Shenzhen facility) indicate a **15% reduction in per-unit costs** vs. legacy processes — directly accretive to gross margins at scale
+>
+> 2. **Distribution Infrastructure Expansion**
+>    - **$5M capital allocation** for Austin, TX distribution center expansion
+>    - Facility currently handles **60% of North American order volume**
+>    - Newly negotiated lease terms expected to yield **$1.2M in annual warehousing cost savings**, representing an attractive ~4-year payback on the investment
+>
+> 3. **European Market Expansion**
+>    - Identified as the primary growth vector for reaching the $58M ARR target
+>    - Specific market entry details pending; further detail expected at the April board meeting
+>
+> ---
+>
+> ## Key Risks
+>
+> | Risk | Severity | Details |
+> |---|---|---|
+> | **Raw Material Cost Inflation** | High | Costs up **8% since January 2026**; direct threat to the 62% gross margin if sustained or accelerating |
+> | **Competitive Pressure** | Medium | PlayWorld Corp. launched a competing smart toy line in **February 2026**, potentially diluting Project Moonbeam's first-mover advantage |
+> | **IP Protection Uncertainty** | Medium | Patent filing for the proprietary *TurboMold 3000* process is **pending USPTO review**; unprotected IP poses risk of process replication by competitors |
+>
+> **Risk Commentary:** The convergence of rising input costs and a new competitive entrant requires close monitoring. Should raw material inflation persist, margin compression could reduce EBITDA by an estimated $0.5–1.0M annually absent pricing adjustments. The pending patent status for the company's core manufacturing innovation represents a strategic vulnerability until resolved.
+>
+> ---
+>
+> ## Outlook
+>
+> ToyMakers Inc. is well-positioned for continued growth in FY2026, supported by:
+>
+> - **Strong revenue trajectory** with a clear path from $42M to $58M ARR (+38%)
+> - **Margin expansion potential** through the TurboMold 3000 manufacturing efficiencies and distribution cost reductions
+> - **Product innovation pipeline** via Project Moonbeam, targeting the high-growth smart toy category
+>
+> **Key watchpoints for the Board:**
+> 1. Raw material cost trajectory and the need for a pricing response strategy
+> 2. Competitive intelligence on PlayWorld Corp.'s market traction
+> 3. USPTO patent decision timeline and contingency plans for IP protection
+> 4. European market entry execution plan (expected at April board meeting)
+>
+> ---
+>
+> *Full financial review to be presented by CEO John Harrison and CFO Sarah Chen at the April 2026 Board Meeting. Contact: Rachel Torres (rtorres@toymakers.com).*
 
 ---
 
-## 4. Metrics
+## 4. Head-to-Head Comparison
+
+Path A (de-anonymized pipeline output) compared to Path B (Claude on original text directly). Every factual claim extracted and compared:
+
+| Category | Data Point | Path A (Pipeline) | Path B (Baseline) | Match |
+|----------|-----------|-------------------|-------------------|:-----:|
+| **Financial** | Q1 Revenue | $12.5M | $12.5M | Exact |
+| | ARR | $42M | $42.0M | Exact |
+| | MRR | $3.5M | $3.5M | Exact |
+| | Gross Margin | 62% | 62% | Exact |
+| | EBITDA | $3.8M | $3.8M | Exact |
+| | CAC | $43.00 | $45 | Residual |
+| | Projected ARR | $58M | $58M | Exact |
+| **Strategic** | Product launch | Project Moonbeam, Q3 2026 | Project Moonbeam, Q3 2026 | Exact |
+| | Manufacturing | TurboMold 3000, 15% cost reduction | TurboMold 3000, 15% cost reduction | Exact |
+| | Test facility | Shenzhen | Shenzhen | Exact |
+| | Distribution | Austin, TX; $5M; $1.2M savings | Austin, TX; $5M; $1.2M savings | Exact |
+| | Growth driver | European expansion → $58M | European expansion → $58M | Exact |
+| **Risks** | Raw materials | 8% increase, 62% margin at risk | 8% increase, 62% margin at risk | Exact |
+| | Competition | PlayWorld Corp., Feb launch | PlayWorld Corp., Feb launch | Exact |
+| | Patent | TurboMold 3000 pending USPTO | TurboMold 3000 pending USPTO | Exact |
+| **Attribution** | Authors | John Harrison, Sarah Chen | John Harrison, Sarah Chen | Exact |
+
+**15 of 16 data points match exactly.** The one residual (CAC) is explained in Section 6.
+
+---
+
+## 5. Metrics
 
 ### Pipeline Internals
 
@@ -270,7 +418,7 @@ Path A (de-anonymized pipeline output) compared to Path B (Claude on original te
 
 ---
 
-## 5. Why It Works
+## 6. Why It Works
 
 **Structure preservation.** Pseudonymization replaces entities but preserves paragraph layout, sentence flow, bullet structure, and logical relationships. Claude's reasoning depends on structure, not on whether the CEO is named "John Harrison" or "Casey Liu."
 
@@ -284,7 +432,7 @@ Path A (de-anonymized pipeline output) compared to Path B (Claude on original te
 
 ---
 
-## 6. Limitations and Improvements
+## 7. Limitations and Improvements
 
 **LLM number reformatting (CAC: $43.00 vs $45).** The original `$45` was pseudonymized to `$43.0`. Claude reformatted this to `$43.00` (adding a trailing zero). The deanonymizer correctly avoids a partial match (which would have produced `$450`), but the pseudonym goes unmatched. Fix: normalize numbers as floats before matching, or generate integer pseudonyms for integer originals.
 
@@ -298,6 +446,6 @@ Path A (de-anonymized pipeline output) compared to Path B (Claude on original te
 
 ---
 
-## 7. Conclusion
+## 8. Conclusion
 
 The pseudonymization pipeline preserves **93.5% of output quality** (BERTScore) while preventing sensitive entities from reaching the external LLM. 15 of 16 data points in the final report match the baseline exactly. The approach is viable for any workflow where confidential documents need LLM analysis without exposing private data.
