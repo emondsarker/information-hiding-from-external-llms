@@ -1,0 +1,29 @@
+[project]
+name = "pseudopipe"
+version = "0.1.0"
+description = "Pseudonymization pipeline for privacy-preserving LLM interactions"
+requires-python = ">=3.11"
+dependencies = [
+    "spacy>=3.7,<4.0",
+    "ollama>=0.4",
+    "sentence-transformers>=3.0",
+    "bert-score>=0.3.13",
+    "rouge-score>=0.1.2",
+    "numpy",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff"]
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
